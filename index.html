@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Адаптивный сайт</title>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+		<link href="css/normalize.css" rel="normalize">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+
+
+ 		<header class="main-header">
+			<nav class="main-navigation">
+				<a class="logo-link" href="index.html">
+					<img class="logo-image" src="img/logotype.svg" width="160" height="32" alt="Адаптивный сайт">
+				</a>
+
+				<ul class="site-navigation">
+					<li class="site-navigation-item">
+						<a class="site-navigation-link" href="#">Работы</a>
+					</li>
+					<li class="site-navigation-item">
+						<a class="site-navigation-link" href="prices.html">Цены</a>
+					</li>
+					<li class="site-navigation-item">
+						<a class="site-navigation-link" href="#">Контакты</a>
+					</li>
+				</ul>
+
+				<ul class="user-navigation">
+					<li class="user-navigation-item">
+						<a class="user-navigation-link" href="#">Войти</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+
+		<main class="main-content">
+			<h1 class="main-title">Дизайн веб-интерфейсов<br>и мобильных приложений</h1>
+			<p class="main-description">CRM системы для бизнеса. Автоматизация процессов. Мобильные приложения.</p>
+
+			<section class="portfolio-section">
+				<h2>Мои работы</h2>
+				<ul class="portfolio-list">
+					<li class="portfolio-item">
+						<a class="preview-link" href="portfolio-case-1.html">
+						<span class="visually-hidden">Кейс Остый дом</span>
+						</a>
+
+						<a class="description-link" href="portfolio-case-1.html">
+						<h3 class="escription-title">Острый дом</h3>
+						<p class="descripion-text">Система автоматизации чистки овощей для среднестатистических домохозяйств.</p>
+						</a>
+					</li>
+
+					<li class="special-case-item">
+						<a class="special-case-link" href="#">
+							<h3 class="special-case-title">Как бахнуть проект и не сгорбиться</h3>
+							<p class="special-case-text">Сделал, уверенно представил и убедил, после чего ушел.</p>
+						</a>
+					</li>
+				</ul>
+			</section>
+
+			<section class="achievment-section">
+				<h2>Примечательные факты</h2>
+
+				<ul class="achievment-list">
+					<li class="achievment-item">
+						<h3 class="achievment-title">Каждый день</h3>
+						<p class="achievment-description">Полон радостей и открытий</p>
+					</li>
+
+					<li class="achievment-item">
+						<h3 class="achievment-title">Чистый взгляд</h3>
+						<p class="achievment-description">В жизнь</p>
+					</li>
+
+					<li class="achievment-item">
+						<h3 class="achievment-title">90 градусов</h3>
+						<p class="achievment-description">Поворот на бок</p>
+					</li>
+
+					<li class="achievment-item">
+						<h3 class="achievment-title">2 часа</h3>
+						<p class="achievment-description">Без дела</p>
+					</li>
+				</ul>
+			</section>
+
+			<div class="index-columns">
+				<section class="map">
+					<h3>Где я нахожусь</h3>
+					<a class="map-link" href="#">
+						<img class="map-image" src="img/map.png" width=100% height=auto alt="Мой адрес: г. Усмань, дом 26, офис 2"> 
+					</a>
+				</section>
+
+				<section class="gallery">
+					<h3>Моя хата</h3>
+					<figure class="gallery-content">
+						<img class="gallery-image" src="img/office.jpg" width="850" height="550" alt="Фото главного офиса">
+					</figure>
+					<div class="index-buttons">
+						<button class="button button-back" type="button" disabled>Назад</button>
+						<button class="button button-forward" type="button">Вперед</button>
+					</div>
+				</section>
+			</div>
+
+			<section class="feedback-form">
+				<h2 class="form-title" aria-label="Форма обратной связи">Я готов выйти на связь</h2>
+				<p class="form-descripion">Один из самых крупных образовательных проектов, построенный на нормальной системе обучения для нормальных людей.</p>
+				<form class="form" action="#" method="post">
+					<ul class="form-list">
+						<li class="form-item">
+							<label class="input-label" for="project-description">
+								Краткое описание проекта
+							</label>
+							<input class="input input-about" type="textarea" name="about-project" id="project-description" placeholder="Краткое описание проекта">
+						</li>
+						
+						<li class="form-item">
+							<label class="input-label" for="client-name">
+								Ваше имя
+							</label>
+							<input class="input input-company" type="client-name" name="Company-name" id="client-name" placeholder="Ваше имя">
+						</li>
+
+						<li class="form-item">
+							<label class="input-label" for="client-company">
+								Название компании
+							</label>
+							<input class="input input-name" type="name" name="company-name" id="client-company" placeholder="Компания">
+						</li>
+
+						<li class="form-item">
+							<label class="input-label" for="phone-number">
+								Телефон
+							</label>
+							<input class="input input-tel" type="tel" name="client-telephone" id="phone-number" placeholder="+7 ___-__-__">
+						</li>
+
+						<li class="form-item">
+							<label class="input-label" for="client-mail">
+								Почта
+							</label>
+							<input class="input input-email" type="email" name="client-email" id="client-mail" placeholder="Почта">
+						</li>
+
+						<li class="form-item">
+							<label class="input-label" for="date">
+								Дата вcтречи
+							</label>
+							<input class="input input-email" type="date" name="date" id="date" value="2022-11-05">
+						</li>
+
+						<li class="form-item">
+							<label class="input-label checkbox-label">
+								<input class="input-checkbox" type="checkbox" name="conf-policy" placeholder="Согласен с политикой конфиденциальности" checked>Согласен с политикой конфиденциальности
+							</label>
+						</li>
+
+						<li class="form-item">
+							<button class=" button button-submit" type="submit">Отправить</button>
+						</li>
+					</ul>
+				</form>
+			</section>
+		</main>
+
+
+		<footer class="footer">
+			<div class="container">
+				<h2>Заходи на чай</h2>
+				<ul class="social-links">
+					<li class="social-links-item">
+						<a class="social-link" href="#"><span class="visually-hidden">Социальная сеть</span>
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M7.66018 13.6953C3.83129 10.8268 1 8.70568 1 4.94997C1 1.08397 8 0.949958 8 4.94997C8 0.949958 15 1.08397 15 4.94997C15 8.70568 12.1687 10.8268 8.33982 13.6953C8.22739 13.7795 8.1141 13.8644 8 13.95C7.8859 13.8644 7.77261 13.7795 7.66018 13.6953Z" fill="black"/>
+							</svg>	
+						</a>
+					</li>
+
+					<li class="social-links-item">
+						<a class="social-link" href="#"><span class="visually-hidden">Социальная сеть</span>
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M7.66018 13.6953C3.83129 10.8268 1 8.70568 1 4.94997C1 1.08397 8 0.949958 8 4.94997C8 0.949958 15 1.08397 15 4.94997C15 8.70568 12.1687 10.8268 8.33982 13.6953C8.22739 13.7795 8.1141 13.8644 8 13.95C7.8859 13.8644 7.77261 13.7795 7.66018 13.6953Z" fill="black"/>
+							</svg>	
+						</a>
+					</li>
+
+					<li class="social-links-item">
+						<a class="social-link" href="#"><span class="visually-hidden">Социальная сеть</span>
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M7.66018 13.6953C3.83129 10.8268 1 8.70568 1 4.94997C1 1.08397 8 0.949958 8 4.94997C8 0.949958 15 1.08397 15 4.94997C15 8.70568 12.1687 10.8268 8.33982 13.6953C8.22739 13.7795 8.1141 13.8644 8 13.95C7.8859 13.8644 7.77261 13.7795 7.66018 13.6953Z" fill="black"/>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+
+
+		<section class="modal modal-login">
+			<h2>Вход в систему</h2>
+			<p class="description">Для входа введите логин и пароль</p>
+			
+			<form class="login-form" action="" method="POST">
+				<p>
+					<label class="visually-hidden" for="user-login">Логин</label>
+					<input class="user-login" id="user-login" type="text" name="login" placeholder="email@example.ru">
+				</p>
+
+				<p>
+					<label class="visually-hidden" for="user-password">Пароль</label>
+					<input class="user-password" id="user-password" type="password" name="password" placeholder="••••••••">
+				</p>
+
+				<p class="remember-and-restore">
+					<label class="remember-label">
+						<input class="visually-hidden" type="checkbox" name="conf-policy" placeholder="Запомнить меня" checked>
+						<span class="checkbox-indicator"></span>
+						Запомнить меня
+					</label>
+					<a class="password-restore" href="#">Я забыл пароль</a>
+				</p>
+
+				<button class="button button-login" type="submit">Войти</button>
+			</form>
+
+			<button class="modal-close" type="button">
+				<span class="visually-hidden">Закрыть</span>
+			</button>
+		</section>
+
+
+		<section class="modal modal-map">
+			<h2>Где я нахожусь</h2>
+			<div class="yandex-map" style="position:relative;overflow:hidden;">
+				<a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a>
+				<a href="https://yandex.ru/maps/20214/usman/house/ulitsa_fridrikha_engelsa_120/Z0AYcQRiSEwPQFtofXx1eHRhZg==/?l=trf%2Ctrfe&ll=39.732198%2C52.049822&utm_medium=mapframe&utm_source=maps&z=17.63" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Фридриха Энгельса, 120 — Яндекс Карты</a>
+				<iframe src="https://yandex.ru/map-widget/v1/-/CCUVvVB~GC" width="850" height="560" frameborder="" allowfullscreen="true" style="position:relative;"></iframe>
+			</div>
+			<button class="modal-close" type="button">
+				<span class="visually-hidden">Закрыть</span>
+			</button>
+		</section>
+
+
+		<div class="modal-overlay"></div>
+
+
+		<script src="scripts/login.js"></script>
+		<script src="scripts/map.js"></script>
+	</body>
+</html>

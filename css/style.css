@@ -1,0 +1,965 @@
+/* Все элементы и псевдоэлементы */
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Текст и фон */
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #181818;
+}
+
+
+/* Скрыте объекты */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+/* Ссылки */
+a {
+    text-decoration: none;
+}
+
+
+/* Картинки */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Кнопки */
+.button {
+    padding: 8px 16px;
+
+    font: inherit;
+
+    text-align: center;
+    color: #181818;
+    vertical-align: center;
+
+    background-color: #f6f6f6;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e1e1e1;
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+/* Кнопки при наведении, нажатии */
+.button:hover,
+.button:active {
+    background-color: #e1e1e1;
+}
+
+
+/* Удаление буллитов в списках хедера */
+.site-navigation,
+.user-navigation {
+    list-style: none;
+}
+
+
+/* Цвет текста ссылок в хедере */
+.site-navigation a,
+.user-navigation a {
+    color: inherit;
+}
+
+
+/* Цвет при наведении на ссылки хедера */
+.site-navigation a:hover,
+.user-navigation a:hover {
+    background-color: #e1e1e1;
+}
+
+
+/* ХЕДЕР */
+.main-header {
+    width: 100%;
+    min-height: 48px;
+    margin-bottom: 24px;
+
+    background-color: #f6f6f6;
+}
+
+
+/* Главная навигация */
+.main-navigation {
+    display: flex;
+
+    width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* Логотип ссылка */
+.logo-link {
+    display: block;
+
+    min-height: 48px;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Логотип картинка */
+.logo-image {
+    display: block;
+
+    padding-top: 4px;
+}
+
+
+/* Навигация по сайту */
+.site-navigation {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: 32px;
+    margin-right: auto;
+}
+
+
+/* Список с кнопкой «Пользователь» */
+.user-navigation {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* Ссылки навигации */
+.site-navigation-link{
+    display: block;
+    padding: 12px 16px;
+}
+
+/* Ссылка на профиль */
+.user-navigation-link {
+    position: relative;
+    display: block;
+    
+    padding: 12px 16px;
+    padding-left: 48px;
+}
+
+
+/* Иконка профиля */
+.user-navigation-link::before {
+    content: "";
+
+    position: absolute;
+    top: 12px;
+    left: 16px;
+
+    width: 24px;
+    height: 24px;
+
+    background-image: url(../img/login.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    opacity: 0.7;
+}
+
+
+/* Иконкаи профиля при наведении */
+.user-navigation-link:hover::before,
+.user-navigation-link:active::before {
+    opacity: 1;
+}
+
+
+/* ОСНОВНОЙ КОНТЕНТ */
+.main-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1280px;
+}
+
+
+/* Удаление буллитов в списке портфолио */
+.portfolio-list {
+    display: flex;
+    list-style: none;
+}
+
+
+/* Цвет ссылок кейса */
+.description-link,
+.special-case-link {
+    color: inherit;
+}
+
+
+/* Запаска для превью кейса 1 */
+.preview-image {
+    background-color: #e1e1e1;
+    border-radius: 4px;
+}
+
+
+/* Кейс 1 */
+.portfolio-item {
+    padding-right: 24px;
+
+    width: 72%;
+}
+
+
+/* Картинка кейса 1 */
+.preview-link {
+    display: block;
+
+    width: 100%;
+    height: 360px;
+
+    background:
+        url(../img/bg-2.png),
+        url(../img/bg.png);
+    background-position:  0 0, 160px 80px;
+    background-repeat: repeat, no-repeat;
+    background-color: #e1e1e1;
+
+    border-radius: 4px;
+}
+
+
+/* Кейс 2 */
+.special-case-item {
+    width: auto;
+}
+
+
+/* Ссылка кейса 2 */
+.special-case-link {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+
+    width: 100%;
+    height: 360px;
+    padding: 24px 16px;
+
+    background-color: #bdbdbd;
+    background-image: linear-gradient(to right bottom, #bbbbbb, #e1e1e1);
+    border-radius: 4px;
+}
+
+
+/* Заголовок кейса 2 */
+.special-case-title {
+    margin-bottom: 72px;
+    position: relative;
+}
+
+/* Ромб после заголовка кейса 2 */
+.special-case-title::after {
+    content: "";
+    position: absolute;
+
+    top: 48px;
+    left: 50%;
+    margin-left: -12px;
+
+    width: 24px;
+    height: 24px;
+
+    background-color: none;
+    border: solid 2px #181818;
+
+    transform: rotate(45deg);
+}
+
+
+/* ПРИМЕЧАТЕЛЬНЫЕ ФАКТЫ */
+.achievment-section {
+    width: 1280px;
+}
+
+
+/* Список фактов */
+.achievment-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    list-style: none;
+}
+
+
+/* Карточка факта */
+.achievment-item {
+    position: relative;
+    flex-grow: 1;
+    
+    min-width: 320px;
+    max-width: 560px;
+    min-height: 80px;
+
+    margin-right: 24px;
+    margin-bottom: 24px;
+    padding: 12px;
+    padding-left: 56px;
+    
+    background-color: #f6f6f6;
+    border-radius: 4px;
+}
+
+
+/* Картинка в карточке факта */
+.achievment-item::before {
+    content: "";
+
+    position: absolute;
+    left: 12px;
+    top:12px;
+
+    width: 32px;
+    height: 32px;
+
+    background-color: #bdbdbd;
+    background-image: linear-gradient(to right bottom, #bbbbbb, #e1e1e1);
+    border-radius: 4px;
+}
+
+
+/* КАРТА И ГАЛЕРЕЯ */
+.index-columns {
+    display: flex;
+
+    width: 1280px;
+}
+
+/* Карта */
+.map {
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+
+    width: 50%;
+    margin-right: 32px;
+}
+
+
+/* Галерея */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+
+    width: 50%;
+}
+
+/* Изображение галереи */
+.gallery-image {
+    margin-bottom: 16px;
+}
+
+
+/* Блок с кнопками */
+.index-buttons {
+    display: flex;
+}
+
+
+/* Кнопка «Назад» */
+.button-back {
+    margin-right: 12px;
+}
+
+.button-back:disabled {
+    cursor: default;
+
+    color:#bdbdbd;
+    background-color:#f6f6f6;
+}
+
+
+/* Запаска для фото из галереи */
+.galery-image {
+    background-color: #e1e1e1;
+    border-radius: 4px;
+}
+
+
+/* ФОРМА ОБРАТНОЙ СВЯЗИ */
+.form-list {
+    width: 1024px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+
+    list-style: none;
+
+}
+
+
+/* Пункты списка формы */
+.form-item {
+    margin-bottom: 24px;
+}
+
+
+/* Лейбл поля формы */
+.input-label {
+    display: inline-block;
+    width: 240px;
+}
+
+
+/* Поля формы */
+.input {
+    padding: 8px 16px;
+
+    width: 720px;
+
+    font: inherit;
+
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #bdbdbd;
+    border-radius: 4px;
+}
+    
+
+/* Лейбл чекбокса */
+.checkbox-label {
+    display: flex;
+    width: 500px;
+
+    cursor: pointer;
+}
+
+
+/* Чекбокс */
+.input-checkbox {
+    margin-right: 12px;
+
+    width: 24px;
+    height: 24px;
+
+    cursor: pointer;
+}
+
+
+/* ФУТЕР */
+.footer {
+    width: 100%;
+    margin-top: 64px;
+    padding-top: 32px;
+    padding-bottom: 56px;
+
+    background-color: #e1e1e1;
+}
+
+
+/* Котенер футера */
+.container {
+    width: 1280px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Список ссылок на соц. сети */
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 400px;
+    margin-top: 24px;
+
+    list-style: none;
+}
+
+
+/* Ссылка на соц. сеть */
+.social-link {
+    display: block;
+
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+
+    background-color: #bdbdbd;
+    border-radius: 4px;
+}
+
+
+/* Ссылки на соц. сети при наведении */
+.social-link:hover,
+.social-link:active {
+    background-color: #9e9e9e;
+}
+
+
+/* Иконки соц. сетей при наведении */
+.social-link:hover path,
+.social-link:active path {
+    fill: #ffffff;
+}
+
+
+/* ОВЕРЛЕЙ ДЛЯ МОДАЛОК */
+.modal-overlay {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.16);
+}
+
+
+/* Появление оверлея для модалок */
+.overlay-show {
+    display: block;
+}
+
+
+/* МОДАЛКА ФОРМА-ВХОДА __________________________________________________________*/
+.modal-login {
+    position: fixed;
+    z-index: 1001;
+
+    top: 48px;
+    left: 50%;
+
+    display: none;
+    width: 480px;
+    margin-left: -240px;
+    padding: 40px 40px 48px 40px;
+
+    background-color: #ffffff;
+    border: solid 1px #e1e1e1;
+    border-radius: 4px;
+    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.64);
+}
+
+
+/* Анимация появления */
+@keyframes bounce {
+    0% {
+        transform: translateY(-2000px);
+    }
+
+    70% {
+        transform: translateY(24px);
+    }
+
+    90% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* Анимация ошибки при отправлке формы */
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    15%,
+    45%,
+    75% {
+        transform: translateX(-4px);
+    }
+
+    30%,
+    60%,
+    90% {
+        transform: translateX(4px);
+    }
+}
+
+
+/* Кнопка «Закрыть» */
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    width: 32px;
+    height: 32px;
+
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+
+/* Иконка крестик */
+.modal-close::before,
+.modal-close::after {
+    content: "";
+
+    position: absolute;
+    left: 6px;
+
+    width: 20px;
+    height: 2px;
+
+    background-color: #707070;
+    border: none;
+    border-radius: 4px;
+}
+
+
+/* Черточка крестика 1 */
+.modal-close::before {
+    transform: rotate(45deg);
+}
+
+
+/* Черточка крестика 2 */
+.modal-close::after {
+    transform: rotate(-45deg);
+}
+
+
+/* Описание модалки */
+.modal-login .description {
+    margin-bottom: 20px;
+}
+
+
+/* Поля модалки */
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    padding: 8px 16px;
+
+    width: 100%;
+    margin-bottom: 16px;
+
+    font: inherit;
+
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #bdbdbd;
+    border-radius: 4px;
+}
+
+
+/* Иконка в поле «user-login» */
+.user-login {
+    background-image: url(../img/user.svg);
+    background-position: 360px 6px;
+    background-repeat: no-repeat;
+}
+
+
+/* Иконка в поле «user-password» */
+.user-password {
+    background-image: url(../img/eye.svg);
+    background-position: 360px 6px;
+    background-repeat: no-repeat;
+}
+
+
+/* Блок «Запомнить» и восстановление пароля */
+.remember-and-restore {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-bottom: 24px;
+}
+
+
+/* Лейбл с чекбоксом «Запомнить» */
+.remember-label {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    
+    padding-left: 32px;
+
+    cursor: pointer;
+}
+
+
+/* Ссылка «Я забыл пароль» */
+.password-restore {
+    color: inherit;
+}
+
+
+/* Индикатор для чекбокса */
+.login-form input[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 24px;
+    height: 24px;
+
+    border: solid 1px #9e9e9e;
+    border-radius: 4px;
+
+}
+
+
+/* Палочка галки индикатора 1 */
+.login-form input[type="checkbox"]:checked + .checkbox-indicator::after {
+    content: "";
+    position: absolute;
+
+    left: 6px;
+    top: 9px;
+
+    width: 13px;
+    height: 2px;
+
+    background-color: #181818;
+    border-radius: 4px;
+
+    transform: rotate(-45deg);
+}
+
+
+/* Палочка галки индикатора 2 */
+.login-form input[type="checkbox"]:checked + .checkbox-indicator::before {
+    content: "";
+    position: absolute;
+
+    left: 2px;
+    top: 11px;
+
+    width: 8px;
+    height: 2px;
+
+    background-color: #181818;
+    border-radius: 4px;
+
+    transform: rotate(45deg);
+}
+
+
+/* Кнопка «Отправить» на модалке */
+.button-login {
+    width: 100%;
+}
+
+
+/* МОДАЛКА С КАРТОЙ __________________________________________________________*/
+.modal-map {
+    position: fixed;
+    z-index: 1001;
+    top: 48px;
+    left: 50%;
+
+    padding: 24px 24px 24px 24px;
+    margin-left: -450px;
+
+    display: none;
+    background-color: #ffffff;
+    border: solid 1px #e1e1e1;
+    border-radius: 4px;
+    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.64);
+}
+
+.yandex-map {
+    background-image: url(../img/map.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.modal-map h2 {
+    margin-bottom: 16px;
+}
+
+
+/* Раскрытие модалок и ошибка при отправке */
+.modal-show {
+    display: block;
+
+    animation-name: bounce;
+    animation-duration: 0.4s;
+}
+
+
+.modal-error {
+    animation: shake 0.4s;
+}
+
+
+/* СТРАНИЦА «ЦЕНЫ» ____________________________________________________________________*/
+
+
+/* Список с хлебными крошками */
+.breadcrumbs {
+    display: flex;
+    margin-bottom: 32px;
+
+    list-style: none;
+}
+
+
+/* Элемент хлебных крошек «Цены» */
+.prices-breadcrumb {
+    position: relative;
+
+    padding-left: 20px;
+    margin-left: 16px;
+
+    opacity: 48%;
+}
+
+
+/* Ромбик для эл. хлебных крошек «Цены» */
+.prices-breadcrumb::before {
+    content: "";
+    position: absolute;
+
+    width: 6px;
+    height: 6px;
+
+    top: 8px;   
+    left: 0;
+
+    background-color: #181818;
+
+    transform: rotate(45deg);
+}
+
+
+/* Заголовок «Стоимость услуг» */
+.big-title {
+    display: flex;
+    align-items: baseline;
+
+    margin-bottom: 32px;
+
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+
+/* Линии заголовка «Стоимость услуг» */
+.big-title::before,
+.big-title::after {
+    content: "";
+
+    width: 16px;
+    height: 1px;    
+
+    background-color:#707070;
+}
+
+
+/* Линия до */
+.big-title::before {   
+    margin-right: 16px;
+}
+
+
+/* Линия после */
+.big-title::after {
+    flex-grow: 1;
+    flex-shrink: 0;
+
+    margin-left: 16px;
+}
+
+
+/* Блок с услугами */
+.wrapper-services {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Таблица */
+.table-prices {
+    margin-right:auto;
+
+    border-collapse: collapse;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 20px 24px rgba(0, 0, 0, 0.16);
+}
+
+
+/* СТроки тиблицы */
+.table-prices tr {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+
+/* Ячейки тиблицы */
+.table-prices td {
+    padding: 8px 56px 8px 32px;
+}
+
+
+/* Ячейки с цифрами */
+.table-prices td:last-child {
+    position: relative;
+
+    font-feature-settings: 'tnum' 1;
+    text-align: right;
+}
+
+
+/* Символ рубля */
+.ruble-symbol {
+    position: absolute;
+
+    top: 8px;
+    right: 40px;
+}
+
+
+/* Блок с описанием услуг */
+.about-services {
+    width: 560px;
+}
+
+.about-services h3 {
+    margin-bottom: 16px;
+}
+
+

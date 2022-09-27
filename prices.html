@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Адаптивный сайт</title>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+		<link href="css/normalize.css" rel="normalize">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+
+
+ 		<header class="main-header">
+			<nav class="main-navigation">
+				<a class="logo-link" href="index.html">
+					<img class="logo-image" src="img/logotype.svg" width="160" height="32" alt="Адаптивный сайт">
+				</a>
+
+				<ul class="site-navigation">
+					<li class="site-navigation-item">
+						<a class="site-navigation-link" href="#">Работы</a>
+					</li>
+					<li class="site-navigation-item">
+						<a class="site-navigation-link" href="#">Цены</a>
+					</li>
+					<li class="site-navigation-item">
+						<a class="site-navigation-link" href="#">Контакты</a>
+					</li>
+				</ul>
+
+				<ul class="user-navigation">
+					<li class="user-navigation-item">
+						<a class="user-navigation-link" href="login.html">Войти</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+
+		<main class="main-content">
+			<ul class="breadcrumbs">
+				<li class="main-breadcrumb">
+					<a href="index.html">Главная</a>
+				</li>
+				<li class="prices-breadcrumb">Стоимость услуг</li>
+			</ul>
+
+			<h1 class="big-title">Что по чем</h1>
+
+			<div class="wrapper-services">
+				<table class="table-prices">
+					<tr>
+						<td>Шутка</td>
+						<td>200<span class="ruble-symbol">₽</span></td>
+					</tr>
+					<tr>
+						<td>Шутка с колким намеком</td>
+						<td>300</td>
+					</tr>
+					<tr>
+						<td>Анекдот про русского, еврея и т.д.</td>
+						<td>1200</td>
+					</tr>
+				</table>
+
+				<section class="about-services">
+					<h3>Качество в высшей степени</h3>
+					<p>Даже если вам что-то не понравилось, наши специалисты всегда вам помогут осадиться, а также профессионально укажут, куда вам следует идти.</p>
+				</section>
+			</div>
+		</main>
+
+
+		<footer class="footer">
+			<div class="container">
+				<h2>Заходи на чай</h2>
+				<ul class="social-links">
+					<li class="social-links-item">
+						<a class="social-link" href="#"><span class="visually-hidden">Социальная сеть</span>
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M7.66018 13.6953C3.83129 10.8268 1 8.70568 1 4.94997C1 1.08397 8 0.949958 8 4.94997C8 0.949958 15 1.08397 15 4.94997C15 8.70568 12.1687 10.8268 8.33982 13.6953C8.22739 13.7795 8.1141 13.8644 8 13.95C7.8859 13.8644 7.77261 13.7795 7.66018 13.6953Z" fill="black"/>
+							</svg>	
+						</a>
+					</li>
+
+					<li class="social-links-item">
+						<a class="social-link" href="#"><span class="visually-hidden">Социальная сеть</span>
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M7.66018 13.6953C3.83129 10.8268 1 8.70568 1 4.94997C1 1.08397 8 0.949958 8 4.94997C8 0.949958 15 1.08397 15 4.94997C15 8.70568 12.1687 10.8268 8.33982 13.6953C8.22739 13.7795 8.1141 13.8644 8 13.95C7.8859 13.8644 7.77261 13.7795 7.66018 13.6953Z" fill="black"/>
+							</svg>	
+						</a>
+					</li>
+
+					<li class="social-links-item">
+						<a class="social-link" href="#"><span class="visually-hidden">Социальная сеть</span>
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M7.66018 13.6953C3.83129 10.8268 1 8.70568 1 4.94997C1 1.08397 8 0.949958 8 4.94997C8 0.949958 15 1.08397 15 4.94997C15 8.70568 12.1687 10.8268 8.33982 13.6953C8.22739 13.7795 8.1141 13.8644 8 13.95C7.8859 13.8644 7.77261 13.7795 7.66018 13.6953Z" fill="black"/>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+
+
+		<section class="modal modal-login">
+			<h2>Вход в систему</h2>
+			<p class="description">Для входа введите логин и пароль</p>
+			
+			<form class="login-form" action="" method="POST">
+				<p>
+					<label class="visually-hidden" for="user-login">Логин</label>
+					<input class="user-login" id="user-login" type="text" name="login" placeholder="email@example.ru">
+				</p>
+
+				<p>
+					<label class="visually-hidden" for="user-password">Пароль</label>
+					<input class="user-password" id="user-password" type="password" name="password" placeholder="••••••••">
+				</p>
+
+				<p class="remember-and-restore">
+					<label class="remember-label">
+						<input class="visually-hidden" type="checkbox" name="conf-policy" placeholder="Запомнить меня" checked>
+						<span class="checkbox-indicator"></span>
+						Запомнить меня
+					</label>
+					<a class="password-restore" href="#">Я забыл пароль</a>
+				</p>
+
+				<button class="button button-login" type="submit">Войти</button>
+			</form>
+
+			 <button class="modal-close" type="button">
+				<span class="visually-hidden">Закрыть</span>
+			</button>
+		</section>
+		
+
+		<script src="scripts/login.js"></script>
+	</body>
+</html>
