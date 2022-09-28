@@ -1,3 +1,3 @@
 # Adaptive site v.2
 
-Test site for gaining skills
+Test site for gaining skills and fun
