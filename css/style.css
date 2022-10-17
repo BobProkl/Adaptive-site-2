@@ -74,29 +74,8 @@ img {
 }
 
 
-/* Удаление буллитов в списках хедера */
-.site-navigation,
-.user-navigation {
-    list-style: none;
-}
-
-
-/* Цвет текста ссылок в хедере */
-.site-navigation a,
-.user-navigation a {
-    color: inherit;
-}
-
-
-/* Цвет при наведении на ссылки хедера */
-.site-navigation a:hover,
-.user-navigation a:hover {
-    background-color: #e1e1e1;
-}
-
-
 /* ХЕДЕР */
-.main-header {
+.header {
     width: 100%;
     min-height: 48px;
     margin-bottom: 24px;
@@ -106,7 +85,7 @@ img {
 
 
 /* Главная навигация */
-.main-navigation {
+.header__navigation {
     display: flex;
 
     width: 1280px;
@@ -116,7 +95,7 @@ img {
 
 
 /* Логотип ссылка */
-.logo-link {
+.header__logo-link {
     display: block;
 
     min-height: 48px;
@@ -126,10 +105,30 @@ img {
 
 
 /* Логотип картинка */
-.logo-image {
+.header__logo-image {
     display: block;
 
     padding-top: 4px;
+}
+
+
+/* Удаление буллитов в списках хедера */
+.site-list {
+    list-style: none;
+}
+
+
+/* Цвет текста ссылок в хедере */
+.site-navigation__link,
+.user-navigation__link {
+    color: inherit;
+}
+
+
+/* Цвет при наведении на ссылки хедера */
+.site-navigation__link:hover,
+.user-navigation__link:hover {
+    background-color: #e1e1e1;
 }
 
 
@@ -151,13 +150,13 @@ img {
 
 
 /* Ссылки навигации */
-.site-navigation-link{
+.site-navigation__link {
     display: block;
     padding: 12px 16px;
 }
 
 /* Ссылка на профиль */
-.user-navigation-link {
+.user-navigation__link {
     position: relative;
     display: block;
     
@@ -167,7 +166,7 @@ img {
 
 
 /* Иконка профиля */
-.user-navigation-link::before {
+.user-navigation__link::before {
     content: "";
 
     position: absolute;
@@ -186,8 +185,8 @@ img {
 
 
 /* Иконкаи профиля при наведении */
-.user-navigation-link:hover::before,
-.user-navigation-link:active::before {
+.user-navigation__link:hover::before,
+.user-navigation__link:active::before {
     opacity: 1;
 }
 
